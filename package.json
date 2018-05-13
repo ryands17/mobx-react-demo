@@ -1,0 +1,22 @@
+{
+  "name": "mobx-react-demo",
+  "version": "1.0.0",
+  "description": "A sample application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "Ryan Dsouza",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "parcel-bundler": "^1.8.1"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
