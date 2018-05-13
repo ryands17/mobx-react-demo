@@ -4,15 +4,6 @@ import store from './App.store'
 
 @observer
 export default class App extends Component {
-  addToList = e => {
-    if (e.which === 13) {
-      e.preventDefault()
-      store.list.push(e.target.value)
-      store.text = ''
-      return
-    }
-  }
-
   render() {
     return (
       <div>
@@ -21,8 +12,8 @@ export default class App extends Component {
           type="text"
           placeholder="add to list"
           value={store.text}
-          onKeyPress={this.addToList}
-          onChange={e => (store.text = e.target.value)}
+          onKeyPress={store.addToList}
+          onChange={store.onTextChange}
         />
         <h4>My List</h4>
         <ul>{store.list.map((item, index) => <li key={index}>{item}</li>)}</ul>
